@@ -4,7 +4,7 @@
 import { gsap } from "gsap";
 
 onMounted(() => {
-window.addEventListener("load", () => {
+
 const heroOverlay = document.querySelector(".hero-overlay");
 const heroOverlayHeading = document.querySelector("#hero-overlay-heading");
 var tl = gsap.timeline();
@@ -33,7 +33,9 @@ tl.to(heroOverlayHeading,{
 tl.to("#hero-overlay-line", {
     autoAlpha:0
   },"<");
-});
+
+  
+gsap.to(".visi", {opacity: 1, delay: 0.5} );
 });
 </script>
 
@@ -99,9 +101,14 @@ body {
 #hero-overlay-line {
   background:#fff;
 }
+
+.visi {
+  opacity: 0;
+}
 </style>
 
 <template>
+  <div class="visi">
     <div class="hero base">
 
 <h1 id="hero-heading" class="heading-primary">
@@ -112,9 +119,10 @@ body {
 </div>
 <div class="hero-overlay base">
 
-<p id="hero-overlay-heading" class="heading-primary">
+<h1 id="hero-overlay-heading" class="heading-primary">
   A new personal website is <br>being created here.
-</p>
+</h1>
 <div id="hero-overlay-line" class="line"></div>
+</div>
 </div>
 </template> 
