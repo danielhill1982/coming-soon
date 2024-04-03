@@ -35,6 +35,6 @@ body {
 
 <template>
     <div class="textbg">
-      <p class="text">Here comes a new personal website, soon.</p>
+      <p class="text">A new personal website is being created here.</p>
     </div>
 </template> 
