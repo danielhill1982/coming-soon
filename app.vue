@@ -66,7 +66,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: #000;
+  color: black;
   position: absolute;
   z-index:100;
   inset:0;
@@ -99,7 +99,7 @@ body {
 }
 
 #hero-overlay-line {
-  background:#fff;
+  background:black;
 }
 
 .visi {
